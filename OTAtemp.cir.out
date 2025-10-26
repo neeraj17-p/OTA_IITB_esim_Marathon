@@ -1,0 +1,24 @@
+.title kicad schematic
+
+.include PMOS-180nm.lib
+.include NMOS-180nm.lib
+* u1 out plot_v1
+m4 out m34g vdd vdd CMOSP W=100u L=100u M=1
+m2 out vinn m125ds gnd CMOSN W=100u L=100u M=1
+vdd1 vdd gnd  dc 1.8
+m1 m34g vinp m125ds gnd CMOSN W=100u L=100u M=1
+m3 m34g m34g vdd vdd CMOSP W=100u L=100u M=1
+vbias1 vbias gnd  dc 0.8
+vinp1 vinp gnd  dc 0.9
+vinn1 vinn gnd  dc 0.9
+m5 m125ds vbias gnd gnd CMOSN W=100u L=100u M=1
+.op
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(out)
+.endc
+.end

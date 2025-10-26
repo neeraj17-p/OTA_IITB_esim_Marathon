@@ -18,12 +18,11 @@ This project demonstrates the design and simulation of a **5-Transistor CMOS Ope
    4. [MOSFET Libraries](#mosfet-libraries)
    5. [Netlist](#netlist)
    6. [Output](#output)
-   7. [Phase-2: AC Analysis](#phase-2:ac-analysis)
+   7. [AC Analysis](#ac-analysis)
    8. [Circuit Schematic](#circuit-schematic)
    9. [Parameters for analysis](#parameters-for-analysis)
    10. [Netlist](#netlist)
    11. [Output](#output)
-7. [Results](#results)  
 8. [Conclusion](#conclusion)  
 9. [Acknowledgement](#acknowledgement)  
 10. [References](#references)
@@ -66,12 +65,52 @@ Phase 2 (AC Analysis): The frequency response was evaluated to study the amplifi
 
 <img width="1287" height="313" alt="image" src="https://github.com/user-attachments/assets/adc477bb-f651-4705-8912-68c33c1984a9" />
 
-
 <img width="1312" height="443" alt="image" src="https://github.com/user-attachments/assets/fd9293bf-a774-48c5-b059-f0f1cab23282" />
 
 ## MOSFET Libraries
 
+[NMOS-160nm.lib](./NMOS-180nm.lib)
+[PMOS-160nm.lib](./PMOS-180nm.lib)
+
+## Netlist
+[OTAtemp.cir](./OTAtemp.cir)
+
+## Output
+<img width="940" height="312" alt="image" src="https://github.com/user-attachments/assets/482de431-4941-42c8-97f4-29cc5c09e7f9" />
 
 
+## AC Analysis
 
+## Circuit Schematic
+<img width="922" height="872" alt="image" src="https://github.com/user-attachments/assets/01513e21-15f9-4dbd-99f1-afb532425df9" />
+
+## Parameters for analysis
+<img width="1316" height="482" alt="image" src="https://github.com/user-attachments/assets/dc12f304-b0d5-40a8-982c-4457157100e4" />
+
+<img width="1286" height="115" alt="image" src="https://github.com/user-attachments/assets/5c39b337-838f-4543-9fcd-d69134e100bb" />
+
+<img width="1305" height="171" alt="image" src="https://github.com/user-attachments/assets/e198cc4f-9902-49ac-b3aa-9299f687f49b" />
+
+## Netlist
+[OTAfinal.cir](./OTAfinal.cir)
+
+## Output
+<img width="940" height="499" alt="image" src="https://github.com/user-attachments/assets/dfacafbe-64bf-474a-bc1e-f1c7c8bfd82a" />
+
+<img width="672" height="737" alt="image" src="https://github.com/user-attachments/assets/740c9d0f-6916-4dde-9811-4c934d406265" />
+
+
+## Conclusion
+The 5T CMOS OTA was successfully designed and simulated on the eSim platform.
+The DC operating point analysis verified correct transistor biasing in the saturation region, and the AC analysis confirmed the amplifier’s expected gain and frequency response characteristics.
+This validates that the OTA behaves as a voltage-controlled current source with good linearity and frequency performance suitable for analog circuit applications.
+
+## Acknowledgement
+I would like to thank FOSSEE, IIT Bombay, and the eSim team for providing the open-source tools and guidance through the VLSI Design Marathon.
+
+
+## References
+1.	Single-Stage CMOS Operational Transconductance Amplifiers (OTAs): A Design Tutorial by Jaesuk Choi, Soon-Jae Kweon and Hyuntak Jeon, link: https://www.mdpi.com/2079-9292/12/18/3833
+2.	Analog vlsi design lecture 36.2: Operational Transconductance amplifier by Inderjit Singh Danjal 
+Link: https://youtu.be/JqNWyzcZ5bM?si=hRd5nHcEGAXtbWnm
 
